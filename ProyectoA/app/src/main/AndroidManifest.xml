@@ -23,7 +23,6 @@
 
         <activity android:name=".activity_catalogo"></activity>
         <activity android:name=".activity_dispositivos"></activity>
-        <activity android:name=".activity_principal"></activity>
         <activity android:name=".activity_review"></activity>
     </application>
 
