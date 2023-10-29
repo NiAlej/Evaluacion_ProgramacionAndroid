@@ -9,37 +9,35 @@
     <!--BARRA SUPERIOR AZUL + TITULO-->
     <LinearLayout
         android:layout_width="415dp"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:orientation="vertical"
         android:background="#29547E"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Tech Horizon"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textColor="#FFF"
-            android:layout_margin="20dp"
-            android:textSize="30sp" />
-
     </LinearLayout>
 
     <!--TITULO DEL DISPOSITIVO-->
     <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+        android:layout_width="278dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="580dp"
         android:orientation="vertical"
-        android:layout_marginBottom="500dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Cargando..."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -56,17 +54,8 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309">
+        app:layout_constraintVertical_bias="0.212">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cargando..."
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="32dp"
-            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -74,9 +63,37 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:src="@drawable/iphone14pro_nuevo"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bordes_redondos"
+        android:onClick="verMapa"
+        android:text="ver en mapa"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bordes_redondos"
+        android:onClick="verVideo"
+        android:text="ver trailer"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:layout_width="370dp"

@@ -24,6 +24,12 @@
         <activity android:name=".activity_catalogo"></activity>
         <activity android:name=".activity_dispositivos"></activity>
         <activity android:name=".activity_review"></activity>
+        <activity android:name=".activity_agregar_dispositivos"></activity>
+        <activity android:name=".activity_mapa"></activity>
+        <activity android:name=".activity_video"></activity>
+        
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 </manifest>

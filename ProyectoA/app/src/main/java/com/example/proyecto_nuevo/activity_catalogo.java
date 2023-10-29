@@ -17,4 +17,9 @@ public class activity_catalogo extends AppCompatActivity {
         Intent intent = new Intent(this, activity_dispositivos.class);
         startActivity(intent);
     }
+
+    public void Crud(View view){
+        Intent intent = new Intent(this, activity_agregar_dispositivos.class);
+        startActivity(intent);
+    }
 }

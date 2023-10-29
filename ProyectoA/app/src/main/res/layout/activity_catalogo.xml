@@ -26,9 +26,6 @@
 
     </LinearLayout>
 
-
-
-
         <Button
             android:layout_width="370dp"
             android:layout_height="140dp"
@@ -100,6 +97,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bordes_redondos"
+            android:onClick="Crud"
+            android:text="Agregar Dispositivo"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
